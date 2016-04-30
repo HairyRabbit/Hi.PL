@@ -20312,7 +20312,7 @@
 
 
 	// module
-	exports.push([module.id, "*,\r\n*:before,\r\n*:after {\r\n    padding: 0;\r\n    margin: 0;\r\n    box-sizing: border-box;\r\n}\r\n\r\nbody {\r\n    overflow-x: hidden;\r\n    font-family: Microsoft YaHei UI,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,Hiragino Sans GB,Hiragino Sans GB W3,sans-serif;\r\n    font-size: 16px;\r\n    line-height: 1.4;\r\n}\r\n\r\ninput {\r\n    font-family: Microsoft YaHei UI,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,Hiragino Sans GB,Hiragino Sans GB W3,sans-serif;\r\n    font-size: 16px;\r\n    line-height: 1.4;\r\n}\r\n\r\n.btn-close {\r\n    background-color: transparent;\r\n    border: none;\r\n    position: absolute;\r\n    right: 0;\r\n    top: 0.5rem;\r\n    font-size: 3rem;\r\n    transform: rotate(45deg);\r\n    cursor: pointer;\r\n    opacity: 0;\r\n    transition: opacity 0.28s ease-in-out 0s;\r\n}\r\n\r\n.todos-item:hover .btn-close,\r\n.btn-close.show {\r\n    opacity: 1;\r\n}\r\n\r\n\r\n.container {\r\n    width: 40rem;\r\n    margin: 2rem auto;\r\n}\r\n\r\n.body {\r\n    background-color: #f3f3f3;\r\n    border-top-left-radius: 6px;\r\n    border-top-right-radius: 6px;\r\n}", ""]);
+	exports.push([module.id, "*,\r\n*:before,\r\n*:after {\r\n    padding: 0;\r\n    margin: 0;\r\n    box-sizing: border-box;\r\n}\r\n\r\nbody {\r\n    overflow-x: hidden;\r\n    font-family: Microsoft YaHei UI,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,Hiragino Sans GB,Hiragino Sans GB W3,sans-serif;\r\n    font-size: 16px;\r\n    line-height: 1.4;\r\n}\r\n\r\ninput {\r\n    font-family: Microsoft YaHei UI,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,Hiragino Sans GB,Hiragino Sans GB W3,sans-serif;\r\n    font-size: 16px;\r\n    line-height: 1.4;\r\n}\r\n\r\n.btn-close {\r\n    background-color: transparent;\r\n    border: none;\r\n    position: absolute;\r\n    right: 0;\r\n    top: 0.5rem;\r\n    font-size: 3rem;\r\n    transform: rotate(45deg);\r\n    cursor: pointer;\r\n    opacity: 0;\r\n    transition: all 0.28s ease-in-out 0s;\r\n}\r\n\r\n.todos-item:hover .btn-close,\r\n.btn-close.show {\r\n    opacity: 1;\r\n    color: white;\r\n}\r\n\r\n\r\n.container {\r\n    width: 40rem;\r\n    margin: 2rem auto;\r\n}\r\n\r\n.body {\r\n    background-color: #f3f3f3;\r\n    border-top-left-radius: 6px;\r\n    border-top-right-radius: 6px;\r\n}", ""]);
 
 	// exports
 
@@ -20763,7 +20763,7 @@
 
 
 	// module
-	exports.push([module.id, ".header {\r\n    font-size: 0.8rem;    \r\n}\r\n\r\n.tab {\r\n    padding-left: 1rem;\r\n}\r\n\r\n.tab-title {\r\n    display: inline-block;\r\n    width: 5rem;\r\n    padding: 0.3rem 0.5rem;\r\n    text-align: center;\r\n    background-color: #ddd;\r\n    color: white;\r\n    border-top-left-radius: 6px;\r\n    border-top-right-radius: 6px;\r\n    cursor: pointer;\r\n    margin-right: 0.5rem;\r\n}\r\n\r\n.tab-title.active {\r\n    background-color: lightblue;\r\n    color: white;\r\n}", ""]);
+	exports.push([module.id, ".header {\r\n    font-size: 0.8rem;    \r\n}\r\n\r\n.tab {\r\n    padding-left: 1rem;\r\n}\r\n\r\n.tab-title {\r\n    display: inline-block;\r\n    width: 5rem;\r\n    padding: 0.3rem 0.5rem;\r\n    text-align: center;\r\n    background-color: #ddd;\r\n    color: white;\r\n    border-top-left-radius: 6px;\r\n    border-top-right-radius: 6px;\r\n    cursor: pointer;\r\n    margin-right: 0.5rem;\r\n    transition: all 0.28s ease-in-out 0s;\r\n}\r\n\r\n.tab-title.active {\r\n    background-color: lightblue;\r\n    color: white;\r\n}", ""]);
 
 	// exports
 
@@ -21182,7 +21182,7 @@
 										return _react2.default.createElement(
 													'section',
 													{ className: 'tf' },
-													_react2.default.createElement('input', { type: 'text', className: 'tf-in', value: this.state.val, onChange: this.changeValue.bind(this), onKeyDown: this.enterKeyDown.bind(this) }),
+													_react2.default.createElement('input', { type: 'text', className: 'tf-in', value: this.state.val, onChange: this.changeValue.bind(this), onKeyDown: this.enterKeyDown.bind(this), placeholder: '随便输点什么' }),
 													_react2.default.createElement(
 																'div',
 																{ className: 'tf-mem' },
@@ -21345,7 +21345,7 @@
 
 
 	// module
-	exports.push([module.id, ".todos-item {\r\n    position: relative;\r\n    padding: 1rem 0.5rem;\r\n    font-size: 2rem;\r\n}\r\n\r\n.todos-item-txt {\r\n    transition: color 0.28s ease-in-out 0s;\r\n}\r\n\r\n.todos-item-txt.completed {\r\n    color: #ddd;\r\n    text-decoration: line-through;\r\n}", ""]);
+	exports.push([module.id, ".todos-item {\r\n    position: relative;\r\n    padding: 1rem 0.5rem;\r\n    font-size: 2rem;\r\n    transition: all 0.28s ease-in-out 0s;\r\n}\r\n\r\n.todos-item:hover {\r\n    background-color: #888;\r\n    color: white;\r\n}\r\n\r\n.todos-item-txt.completed {\r\n    color: #ddd;\r\n    text-decoration: line-through;\r\n    transition: color 0.28s ease-in-out 0s;\r\n}", ""]);
 
 	// exports
 

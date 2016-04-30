@@ -17,6 +17,7 @@
     border-top-right-radius: 6px;
     cursor: pointer;
     margin-right: 0.5rem;
+    transition: all 0.28s ease-in-out 0s;
 }
 
 .tab-title.active {

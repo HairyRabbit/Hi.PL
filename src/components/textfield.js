@@ -55,7 +55,7 @@ export default class TextField extends Component {
 	
 	return (
 	    <section className="tf">
-		<input type="text" className="tf-in" value={this.state.val} onChange={this.changeValue.bind(this)} onKeyDown={this.enterKeyDown.bind(this)} />
+		<input type="text" className="tf-in" value={this.state.val} onChange={this.changeValue.bind(this)} onKeyDown={this.enterKeyDown.bind(this)} placeholder="随便输点什么" />
 		<div className="tf-mem">{memStr}</div>
 		<button type="button" className={btnClass} tabIndex="-1" onClick={this.clearValue.bind(this)}>+</button>
 	    </section>

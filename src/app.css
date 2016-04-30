@@ -29,12 +29,13 @@ input {
     transform: rotate(45deg);
     cursor: pointer;
     opacity: 0;
-    transition: opacity 0.28s ease-in-out 0s;
+    transition: all 0.28s ease-in-out 0s;
 }
 
 .todos-item:hover .btn-close,
 .btn-close.show {
     opacity: 1;
+    color: white;
 }
 
 
