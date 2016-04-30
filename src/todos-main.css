@@ -1,0 +1,10 @@
+.todos {
+    list-style-type: none;
+}
+.todos li {
+    border-bottom: 1px solid #ddd;
+}
+
+.todos li:last-child {
+    border: none;
+}

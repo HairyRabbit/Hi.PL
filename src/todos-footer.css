@@ -1,0 +1,30 @@
+.footer {
+    padding: 1rem 0.5rem;
+    font-size: 0.8rem;
+    background-color: lightblue;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.footer:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer-left {
+    float: left;
+}
+
+.footer-right {
+    float: right;
+}
+
+.todos-info {
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+.todos-info span {
+    color: white;
+}

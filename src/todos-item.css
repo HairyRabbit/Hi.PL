@@ -1,0 +1,14 @@
+.todos-item {
+    position: relative;
+    padding: 1rem 0.5rem;
+    font-size: 2rem;
+}
+
+.todos-item-txt {
+    transition: color 0.28s ease-in-out 0s;
+}
+
+.todos-item-txt.completed {
+    color: #ddd;
+    text-decoration: line-through;
+}

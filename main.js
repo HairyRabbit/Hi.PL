@@ -1,49 +1,8 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { render } from 'react-dom'
-import {} from 'bootstrap/dist/css/bootstrap.css'
-
-import TodosItem from './src/todos-item'
-
-
-class App extends Component {
-    constructor() {
-        super()
-        this.state = { val: "", datas: [] }
-    }
-    changeHandle(evt) {
-        this.setState({ val: evt.target.value })
-    }
-    keydownHandle(evt) {
-        if(evt.keyCode === 13)
-            this.setState({
-                datas: this.state.datas.concat(evt.target.value),
-                val: ""
-            })
-    }
-    deleteItem(idx) {
-        let datas = this.state.datas
-        let left = datas.slice(0, idx)
-        let right = datas.slice(idx + 1)
-        this.setState({
-            datas: [].concat(left).concat(right)
-        })
-    }
-    render() {
-        return (
-            <div className="container">
-                <input type="text" onChange={this.changeHandle.bind(this)} onKeyDown={this.keydownHandle.bind(this)} value={this.state.val} className="form-control" />
-                <div>{this.state.val}</div>
-                <ul className="list-group">
-                {this.state.datas.map(
-                    (n, idx) => <TodosItem name={n} clickHandle={() => this.deleteItem.bind(this)(idx)} />
-                )}
-                </ul>
-            </div>
-        )
-    }
-}
+import App from './src/app'
 
 render(
-        <App />,
-    document.body
+  <App />,
+  document.getElementById('app')
 )

@@ -1,0 +1,50 @@
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: Microsoft YaHei UI,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,Hiragino Sans GB,Hiragino Sans GB W3,sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+input {
+    font-family: Microsoft YaHei UI,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,Hiragino Sans GB,Hiragino Sans GB W3,sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.btn-close {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 0.5rem;
+    font-size: 3rem;
+    transform: rotate(45deg);
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.28s ease-in-out 0s;
+}
+
+.todos-item:hover .btn-close,
+.btn-close.show {
+    opacity: 1;
+}
+
+
+.container {
+    width: 40rem;
+    margin: 2rem auto;
+}
+
+.body {
+    background-color: #f3f3f3;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}

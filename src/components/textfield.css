@@ -1,0 +1,39 @@
+.tf {
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    z-index: 1;
+}
+
+.tf-in {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    padding: 1rem 0.5rem;
+    font-size: 2rem;
+}
+
+.tf-btn {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 0.5rem;
+    font-size: 3rem;
+    transform: rotate(45deg);
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.28s ease-in-out 0s;
+}
+
+.tf-btn.show {
+    opacity: 1;
+}
+
+.tf-mem {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    font-size: 2rem;
+    color: #ddd;
+    padding: 1rem 0.5rem;
+    z-index: -1;
+}
